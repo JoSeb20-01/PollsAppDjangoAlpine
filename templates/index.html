@@ -1,0 +1,16 @@
+{% extends "_base.html" %}
+
+{% block 'page' %}
+    <main class="flex w-full min-h-screen" x-data="layout">
+        <aside class="h-full w-1/6">
+            <div></div>
+        </aside>
+        <div class="h-full flex-1">
+            <nav class="w-full h-4" x-data="sidebar">
+            </nav>
+            <div>
+                {% block 'content' %}{% endblock  %}
+            </div>
+        </div>
+    </main>
+{% endblock  %}

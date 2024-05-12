@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "target": "ES2020",
+        "allowImportingTsExtensions": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "baseUrl": "./"
+    },
+    "typeAcquisition": {
+        "include": [
+            "jquery",
+            "alpinejs",
+            "alpinejs__persist",
+            "datatables.net",
+        ]
+    }
+}

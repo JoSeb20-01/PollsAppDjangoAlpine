@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block 'title' %}{% endblock  %}</title>
+        {% block 'styles' %}
+            <link rel="stylesheet" href="{% static 'core/css/output.css' %}">
+            <link rel="stylesheet" href="{% static 'core/css/index.css' %}">
+        {% endblock  %}
+        {% block 'cdns' %}
+            <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
+            <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.10/dist/cdn.min.js"></script>
+        {% endblock  %}
+    </head>
+    <body>
+        {% block 'page' %}{% endblock  %}
+        {% block 'scripts' %}
+            <script src="{% static 'core/js/utils.js' %}"></script>
+            <script src="{% static 'core/js/layout.js' %}"></script>
+        {% endblock  %}
+    </body>
+</html>
